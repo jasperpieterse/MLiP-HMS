@@ -9,10 +9,10 @@ This competition was part of the course **Machine Learning in Practice (NWI-IMC0
 This repository contains **three** models we developed for EEG classification:  
 
 1. **EEGNet** – A hybrid model combining a **convolutional pathway** and a **Gated Recurrent Unit (GRU) pathway** to classify EEG signals.  
-   ![image](EEGNet.png)  
+![image](EEGNet.png)  
 
 2. **EEGNet Parallel** – A variation of EEGNet where each temporal chain is processed in **parallel** before concatenation.  
-   ![image](EEGNetParallel.png)  
+![image](EEGNetParallel.png)  
 
 3. **Ensemble Model** – Our final submission used an **ensemble** combining:
    - EEGNet  
