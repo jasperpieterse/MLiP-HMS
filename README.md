@@ -1,16 +1,35 @@
-# Classifying Harmful Brain Activity
-This repository houses notebooks belonging to the "GAN Getting-Started" competition, hosted by Kaggle. The notebooks have been set up by three students of team 13 of the Radboud University Masters course "Machine Learning in Practice". The goal of this competition is to ...
+# HMS - Harmful Brain Activity Classification  
 
-https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification
-Explain the thing, what you made, what your group made and maybe what u've learned? How to build a Github portfolio?
+This repository contains the code for the **HMS - Harmful Brain Activity Classification Kaggle Competition**, where we developed deep learning models to **detect and classify seizures and other harmful brain activity** using **electroencephalography (EEG) signals** and their corresponding **spectrograms** recorded from critically ill hospital patients.  
 
-# Dataset
-The dataset consists of EEG Signals.
+This competition was part of the course **Machine Learning in Practice (NWI-IMC030)**, where we worked in teams of three to compete. More details about the competition can be found on the [Kaggle competition page](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification).  
 
-# Model
-Our model consists.
+## Models  
 
-# Specifications
-The notebooks present in this repository were directly downloaded from Kaggle. The notebooks were written in Python and ran on  a Kaggle TPU v3-8 accelerator. Additionally, libraries like Tensorflow, Keras, numpy and scipy were used.
+This repository contains **three** models we developed for EEG classification:  
 
-# Notebooks referenced
+1. **EEGNet** – A hybrid model combining a **convolutional pathway** and a **Gated Recurrent Unit (GRU) pathway** to classify EEG signals.  
+   ![EEGNet](EEGNet.png)  
+
+2. **EEGNet Parallel** – A variation of EEGNet where each temporal chain is processed in **parallel** before concatenation.  
+   ![EEGNet Parallel](EEGNetParallel.png)  
+
+3. **Ensemble Model** – Our final submission used an **ensemble** combining:
+   - EEGNet  
+   - EEGNet Parallel  
+   - WaveNet (pre-trained)  
+   - EfficientNetB0 (pre-trained, trained on spectrograms)  
+
+   *(Note: The WaveNet and EfficientNetB0 models were not developed by us, but were included in our final submission.)*  
+
+Each notebook details the **data preprocessing, model training, and inference process**. The attached **report** provides further details about the models and an overview of the competition.  
+
+## Installation  
+
+These notebooks are designed to run in the **Kaggle environment** dedicated to this competition. To run the notebooks, follow these steps:
+
+1. **Download the competition data** from the [Kaggle page](https://www.kaggle.com/competitions hms-harmful-brain-activity-classification).  
+2. **Upload the notebooks** to the Kaggle environment.  
+3. **Run the notebooks**—no additional installation is required.  
+
+**Note:** Training and inference are handled in separate notebooks. Be sure to follow the provided instructions in each notebook.  
