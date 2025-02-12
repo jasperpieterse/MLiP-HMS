@@ -12,7 +12,7 @@ This repository contains **three** models we developed for EEG classification:
 ![image](images/EEGNet.png)
 
 2. **EEGNet Parallel** – A variation of EEGNet where each temporal chain is processed in **parallel** before concatenation.  
-![image](images/EEGNetParallel.png)  
+![image](images/EEGNETParallel.png)  
 
 3. **Ensemble Model** – Our final submission used an **ensemble** combining:
    - EEGNet  
